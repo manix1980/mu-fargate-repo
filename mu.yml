@@ -1,9 +1,9 @@
 ---
 
 environments:
-  - name: acceptance
+  - name: acceptance-pmd
     provider: ecs-fargate
-  - name: production
+  - name: production-pmd
     provider: ecs-fargate
 
 service:
@@ -14,7 +14,7 @@ service:
     - /*
 
 parameters:
-  acceptance:
+  acceptance-pmd:
     ThreatIntelSetUrl: https://s3.amazonaws.com/delete-pmd-guardduty/GuardDutyIpSet.txt
     IpSetUrl: https://s3.amazonaws.com/delete-pmd-guardduty/GuardDutyThreatIntelSet.txt
 
