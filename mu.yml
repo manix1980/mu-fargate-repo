@@ -14,7 +14,7 @@ service:
     - /*
 
 parameters:
-  acceptance:
+  mu-vpc-acceptance:
     ThreatIntelSetUrl: https://s3.amazonaws.com/delete-pmd-guardduty/GuardDutyIpSet.txt
     IpSetUrl: https://s3.amazonaws.com/delete-pmd-guardduty/GuardDutyThreatIntelSet.txt
 

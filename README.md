@@ -7,4 +7,6 @@ mu pipeline list
 mu environment terminate production
 mu environment terminate acceptance
 mu pipeline terminate ecs-fargate-example
+mu -d env up
+
 ```
