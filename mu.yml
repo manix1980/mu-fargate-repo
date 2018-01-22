@@ -19,4 +19,4 @@ parameters:
     IpSetUrl: https://s3.amazonaws.com/delete-pmd-guardduty/GuardDutyThreatIntelSet.txt
 
 extensions:
-- url: https://github.com/stelligent/mu-guardduty/archive/v0.2.zip    
+- url: https://github.com/stelligent/mu-guardduty/archive/v0.3.zip    
