@@ -1,9 +1,9 @@
 ---
 
 environments:
-  - name: acceptance-pmd
+  - name: acceptance
     provider: ecs-fargate
-  - name: production-pmd
+  - name: production
     provider: ecs-fargate
 
 service:
