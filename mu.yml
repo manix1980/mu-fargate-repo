@@ -14,4 +14,4 @@ service:
     - /*
 
 extensions:
-- url: /Users/paulduvall/Training/mu-cloud9/mu-cloud9-0.2.zip
+- url: /Users/paulduvall/Training/mu-cloud9/mu-cloud9-0.3.zip
