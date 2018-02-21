@@ -14,4 +14,4 @@ service:
     - /*
 
 extensions:
-  - url: https://github.com/stelligent/mu-cloud9/archive/v0.3.zip
+  - url: https://github.com/stelligent/mu-pipeline-dashboard/archive/v0.1.zip
