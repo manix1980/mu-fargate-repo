@@ -12,6 +12,4 @@ service:
   port: 80
   pathPatterns:
     - /*
-
-extensions:
-  - url: https://github.com/stelligent/mu-pipeline-dashboard/archive/v0.1.zip
+  
