@@ -1,9 +1,7 @@
 ---
 
 environments:
-  - name: acc
-    provider: ecs-fargate
-  - name: prod
+  - name: acceptance
     provider: ecs-fargate
 
 service:
