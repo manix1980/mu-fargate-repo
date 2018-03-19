@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - cfn_nag_scan --input-path cfn/volume.yml 
+      - echo "replace me with real build commands..."
 
 artifacts:
   files:
