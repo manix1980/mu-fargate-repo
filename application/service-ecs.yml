@@ -1,0 +1,4 @@
+  PmdParam:
+    Type: String
+    Description: PMD Stelligent
+    Default: ''
