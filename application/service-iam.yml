@@ -1,21 +1,17 @@
 Resources:
-  CloudFormationRole:
+  CodeDeployRole:
+    Type: AWS::IAM::Role
+    Condition: IsEc2Service
     Properties:
-      Policies:
-      - PolicyName: deploy-guardduty
-        PolicyDocument:
-          Version: '2012-10-17'
-          Statement:
-          - Action:
-            - guardduty:*
-            - iam:PutRolePolicy
-            Resource: '*'
-            Effect: Allow
-          - Action:
-            - iam:CreateServiceLinkedRole
-            - iam:PutRolePolicy
-            Resource: 'arn:aws:iam::*:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty*'
-            Condition:
-              StringLike:
-                iam:AWSServiceName: guardduty.amazonaws.com
-            Effect: Allow
+      RoleName: !Sub ${Namespace}-service-${ServiceName}-${EnvironmentName}-codedeploy-${AWS::Region}
+      AssumeRolePolicyDocument:
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service:
+            - !Sub codedeploy.${AWS::Region}.amazonaws.com
+          Action:
+          - sts:AssumeRole
+      Path: "/"
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/service-role/AWSConfigRole
