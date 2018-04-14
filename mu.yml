@@ -16,5 +16,6 @@ service:
 extensions:
 - url: https://github.com/stelligent/mu-cfn_nag/archive/v0.2.zip
 - url: application
-
+- url: https://github.com/stelligent/mu-cfn_nag/archive/v0.2.zip
+- url: application
   
